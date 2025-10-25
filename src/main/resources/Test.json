@@ -1,0 +1,27 @@
+{
+  "validations": [
+    {
+      "fieldName": "age",
+      "cellValidations": [
+        {
+          "type": "not-null",
+          "errorMessage": "cannot be null"
+        },
+        {
+
+          "type": "min",
+          "errorMessage": "must be greater than zero"
+        }
+      ]
+    },
+    {
+      "fieldName": "email",
+      "cellValidations": [
+        {
+          "type": "pattern",
+          "errorMessage": "invalid email"
+        }
+      ]
+    }
+  ]
+}
